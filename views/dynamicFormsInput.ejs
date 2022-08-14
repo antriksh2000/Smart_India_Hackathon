@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/dynamic_form.css" />
+  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <input id="userInput" type="text" />
+    <button  onclick="getInputFromTextBox();openFullscreen();">click me</button>
+    <center>
+      <p id="text"><h4>No Active Test</h4></p>
+    </center>
+  </body>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <!-- <script src="/getLink.js"></script> -->
+
+  <script>
+    function getInputFromTextBox() {
+    let input = document.getElementById("userInput").value;
+    document.getElementById("text").innerHTML = input;
+  }
+//  full screen onclick
+  var elem = document.documentElement;
+  function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) {
+      /* Safari */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) {
+      /* IE11 */
+      elem.msRequestFullscreen();
+    }
+  }
+  //10 countdowun
+ console.log("hhfgdshja");
+jQuery(document).ready(function(){
+jQuery(function() {
+      jQuery(this).bind("contextmenu", function(event) {
+          event.preventDefault();
+          alert('Right click disable in this site!!')
+      });
+  });
+});
+  </script>
+</html>

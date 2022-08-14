@@ -1,0 +1,44 @@
+body {
+  background: url("./images/bg-registration-form-1.jpg");
+}
+label {
+  color: white;
+  font-size: 20px;
+}
+.reg {
+  color: white;
+}
+#register {
+  width: 60%;
+  height: 40px;
+  margin: 10px auto;
+  border: 1px solid black;
+  justify-content: center;
+  display: block;
+  color: #3bb6d5;
+  background: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 20px;
+  outline: none;
+  border: 1px;
+  border-radius: 5px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+#register:hover {
+  background: #b8e9f5;
+}
+
+#message{
+  color:red;
+}
+#button1{
+
+  background-color: rebeccapurple;
+  display: flex;
+  
+}
+#aadhar{
+  display: flex;
+}
